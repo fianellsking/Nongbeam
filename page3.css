@@ -1,0 +1,235 @@
+body {
+    background-color: #FCE4EC;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 50px;
+    color: #C2185B;
+    position: relative;
+    margin-top: 20px;
+}
+
+.wave-text span {
+    display: inline-block;
+    font-size: 4rem;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.wave-text span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.wave-text span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.wave-text span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+.wave-text span:nth-child(6) {
+    animation-delay: 1s;
+}
+.wave-text span:nth-child(7) {
+    animation-delay: 1.2s;
+}
+.wave-text span:nth-child(8) {
+    animation-delay: 1.4s;
+}
+.wave-text span:nth-child(9) {
+    animation-delay: 1.6s;
+}
+.wave-text span:nth-child(10) {
+    animation-delay: 1.8s;
+}
+.wave-text span:nth-child(11) {
+    animation-delay: 2s;
+}
+.wave-text span:nth-child(12) {
+    animation-delay: 2.2s;
+}
+.wave-text span:nth-child(13) {
+    animation-delay: 2.4s;
+}
+.wave-text span:nth-child(14) {
+    animation-delay: 2.6s;
+}
+.wave-text span:nth-child(15) {
+    animation-delay: 2.8s;
+}
+.wave-text span:nth-child(16) {
+    animation-delay: 3s;
+}
+.wave-text span:nth-child(17) {
+    animation-delay: 3.2s;
+}
+.wave-text span:nth-child(18) {
+    animation-delay: 3.4s;
+}
+.wave-text span:nth-child(19) {
+    animation-delay: 3.6s;
+}
+.wave-text span:nth-child(20) {
+    animation-delay: 3.8s;
+}
+.wave-text span:nth-child(21) {
+    animation-delay: 4s;
+}
+.wave-text span:nth-child(22) {
+    animation-delay: 4.2s;
+}
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+p {
+    font-size: 35px;
+    line-height: 1.6;
+    margin: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: #D81B60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #C2185B;
+}
+
+.device {
+    display: inline-block;
+    position: relative;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.turntable {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.vinyl {
+    width: 150px;
+    height: 150px;
+    background-color: #333;
+    border-radius: 50%;
+    background-image: radial-gradient(circle, #444, #333);
+    position: absolute;
+}
+
+.turntable.rotate .vinyl {
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.LGG {
+    display: inline-block;
+    position: relative;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.turntables {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.vinyln {
+    width: 150px;
+    height: 150px;
+    background-color: #333;
+    border-radius: 50%;
+    background-image: radial-gradient(circle, #444, #333);
+    position: absolute;
+}
+
+.turntables.rotate .vinyln {
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
